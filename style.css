@@ -1,0 +1,61 @@
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+.jumbotron{
+    color:seagreen;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image:linear-gradient(honeydew, rgb(72, 175, 115));
+    text-align: center;
+    padding:30px;
+}
+.about{
+    background-color: honeydew;
+    padding:10px;
+    color:seagreen;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:20px;
+    color:seagreen;
+}
+#form{
+    padding:20px;
+}
+.border{
+    padding:25px;
+    border-style:double;
+    border-width:20px;
+    border-color:black;
+}#quote-box {
+    width: 700px;
+    height: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 3px solid seagreen;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: Georgia;
+}
+
+#quote {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+#new-quote-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: seagreen;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#new-quote-btn:hover {
+    background-color: green;
+}

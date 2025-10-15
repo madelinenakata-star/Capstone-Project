@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Motivational Quotes</title>
+
+ 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+ 
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <!-- Your content goes here -->
+   <script src="script.js"></script>
+   <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <h1>MOTIVATIONAL QUOTES</h1><hr>
+               <h3>A Great Way to Start Your Day</h3><hr>
+               <p>The mission of this website is to spread inspiration, motivation, and positvity through quotes everyday!</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+               <button type="button" class="btn btn-light"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i>About Us</a></button>
+            </div>
+            <div class="col">
+               <button type="button" class="btn btn-light"><a class="nav-link" href="social.html"><i class="fa fa-info fa-lg"></i>Share a Quote</a></button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <div class="row row-content">
+            <div class="col-sm-10 mx-auto">
+                <div class="card">
+                    <h3 class="card-header text-white bg-success">Quotes</h3>
+                    <div class="card-body">
+                        <div id="quote-box">
+    <div id="quote">Click the button to get a quote.</div>
+    <button id="new-quote-btn">New Quote</button>
+  </div>
+
+  <script>
+    const quotes = [
+      "The only limit to our realization of tomorrow is our doubts of today. – FDR",
+    "In the middle of every difficulty lies opportunity. – Albert Einstein",
+    "Life is 10% what happens to us and 90% how we react to it. – Charles R. Swindoll",
+    "The best way to predict the future is to create it. – Peter Drucker",
+    "Do one thing every day that scares you. – Eleanor Roosevelt",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill",
+    "Believe you can and you're halfway there. – Theodore Roosevelt",
+    "Don’t watch the clock; do what it does. Keep going. – Sam Levenson",
+    "It always seems impossible until it’s done. – Nelson Mandela",
+    "Start where you are. Use what you have. Do what you can. – Arthur Ashe",
+    "You are never too old to set another goal or to dream a new dream. – C.S. Lewis",
+    "Hardships often prepare ordinary people for an extraordinary destiny. – C.S. Lewis",
+    "Opportunities don't happen. You create them. – Chris Grosser",
+    "Push yourself, because no one else is going to do it for you. – Unknown",
+    "Great things never come from comfort zones. – Unknown"
+    ];
+
+    const quoteElement = document.getElementById("quote");
+    const button = document.getElementById("new-quote-btn");
+
+    button.addEventListener("click", () => {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      quoteElement.textContent = quotes[randomIndex];
+    });
+  </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+</body>
+</html>
